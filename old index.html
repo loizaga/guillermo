@@ -8,39 +8,25 @@
   body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background: none;
   }
   .content {
     text-align: center;
     width: 90%;
-    max-width: 400px;
-    margin: auto;
-    position: relative; /* Added to manage positioning better */
-    padding-top: 50px; /* This ensures there's some space at the top */
-    box-sizing: border-box; /* Ensures padding is included in the height calculation */
+    max-width: 400px; /* Adjust based on the typical width of a phone */
   }
   img {
     width: 100%;
     height: auto;
+    vertical-align: top;
   }
   a {
     text-decoration: none;
     color: blue; 
-  }
-  
-  /* Adjustments for smaller screens */
-  @media screen and (max-height: 600px) {
-    .content {
-      padding-top: 20px; /* Less padding for very small screens */
-    }
-  }
-  
-  /* Additional media query if needed for very tight spaces, can adjust values as necessary */
-  @media screen and (max-height: 500px) {
-    .content {
-      padding-top: 10px; /* Minimal padding for extremely small screens */
-    }
   }
 </style>
 </head>
